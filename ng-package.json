@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "./dist/bc-ui-angular-libs",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "allowedNonPeerDependencies": [
+    "@auth0/angular-jwt",
+    "font-awesome",
+    "moment",
+    "sweetalert2",
+    "scroll-into-view-if-needed"
+  ]
+}
