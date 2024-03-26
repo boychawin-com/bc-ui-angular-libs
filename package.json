@@ -1,8 +1,8 @@
 {
   "name": "@boychawin/ui-angular-libs",
-  "version": "0.0.5",
-  "description": "",
-  "author": "",
+  "version": "1.0.1",
+  "description": "ui",
+  "author": "boycahwin",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -56,6 +56,9 @@
   "homepage": "https://github.com/boychawin-com/bc-ui-angular-libs#readme",
   "publishConfig": {
     "@boychawin:registry": "https://npm.pkg.github.com"
-  }
-
+  },
+  "main": "gulpfile.js",
+  "keywords": [
+    "bc"
+  ]
 }
