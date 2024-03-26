@@ -1,6 +1,9 @@
 {
   "name": "@boychawin/ui-angular-libs",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "",
+  "author": "",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -51,9 +54,6 @@
     "url": "https://github.com/boychawin-com/bc-ui-angular-libs/issues"
   },
   "homepage": "https://github.com/boychawin-com/bc-ui-angular-libs#readme",
-  "author": "",
-  "license": "",
-  "description": "",
   "publishConfig": {
     "@boychawin:registry": "https://npm.pkg.github.com"
   }
