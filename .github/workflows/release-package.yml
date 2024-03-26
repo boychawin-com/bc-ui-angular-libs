@@ -30,12 +30,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm install
       - run: npm run build
-      - run: pwd
-      - run: ls
       - name: Public package
         run: |
           cd dist/bc-ui-angular-libs
           npm publish
-          pwd
         env:
           NODE_AUTH_TOKEN: ${{secrets.PA_TOKEN}}
