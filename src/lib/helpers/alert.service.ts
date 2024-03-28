@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+// import Swal from 'sweetalert2';
+
 declare var Swal: any;
 
 export interface AlertOptions {
@@ -7,7 +9,7 @@ export interface AlertOptions {
   text?: string;
   html?: string;
   footer?: string;
-  type?: 'success' | 'error' | 'warning' | 'info' | 'question';
+  icon?: 'success' | 'error' | 'warning' | 'info' | 'question';
   backdrop?: boolean | string;
   toast?: boolean;
   target?: string;
@@ -75,35 +77,35 @@ export class AlertService {
 
   success(text: string): Promise<any> {
     return this.notify({
-      type: 'success',
+      icon: 'success',
       html: text
     });
   }
 
   error(text: string): Promise<any> {
     return this.notify({
-      type: 'error',
+      icon: 'error',
       html: text
     });
   }
 
   warning(text: string): Promise<any> {
     return this.notify({
-      type: 'warning',
+      icon: 'warning',
       html: text
     });
   }
 
   info(text: string): Promise<any> {
     return this.notify({
-      type: 'info',
+      icon: 'info',
       html: text
     });
   }
 
   question(text: string, confirmText?: string, cancelText?: string): Promise<any> {
     return this.notify({
-      type: 'question',
+      icon: 'question',
       showConfirmButton: true,
       confirmButtonText: confirmText || 'Confirm',
       cancelButtonText: cancelText || 'Cancel',

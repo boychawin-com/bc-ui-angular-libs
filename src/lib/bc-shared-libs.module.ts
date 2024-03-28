@@ -11,6 +11,7 @@ import {
 /* Services */
 import { AlertService } from "./helpers/alert.service";
 import { CookieService } from "./service/cookie.service";
+import { PageLoadingService } from "./helpers/page-loading.service";
 /* Directive*/
 import { LoadingDirective } from "./directive/loading.directive";
 /* Pipes */
@@ -79,6 +80,7 @@ export class BCSharedLibsModule {
       ngModule: BCSharedLibsModule,
       providers: [
         AlertService,
+        PageLoadingService,
         TranslateService,
         {
           provide: "environment",
