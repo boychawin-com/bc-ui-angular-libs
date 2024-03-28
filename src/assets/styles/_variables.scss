@@ -1,0 +1,102 @@
+// Screen breakpoint
+$screen: (
+  xs: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+  xxl: 1920px,
+);
+
+$screen-min: (
+  xs: 321px,
+  sm: 481px,
+  md: 769px,
+  lg: 1025px,
+  xl: 1441px,
+  xxl: 1921px,
+);
+
+// Spacer
+$spacer: 15px;
+$spacer-sm: 10px;
+$spacer-xs: 5px;
+$spacer-lg: 20px;
+$spacer-xl: 30px;
+$spacer-xxl: 40px;
+
+// Font
+$font-default: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+
+$font-family: 'DB Heavent', $font-default;
+// $font-family-bold: "DB Heavent Bold", $font-default;
+// $font-family-Med: "DB Heavent Med", $font-default;
+// $font-family-normal: "DB Heavent Normal", $font-default;
+$font-family-bold: 'DB Heavent', $font-default;
+$font-family-Med: 'DB Heavent', $font-default;
+$font-family-normal: 'DB Heavent', $font-default;
+
+$font-size: 24px;
+$font-size-xxs: 0.25rem;
+$font-size-xs: 0.75rem; //18px
+$font-size-sm: 0.8333rem; //20px
+$font-size-lg: 1.5rem; //36px
+$font-size-xl: 1.8333rem; //44px
+$font-size-xxl: 2rem;
+
+$font-size-input: $font-size;
+$font-size-label: $font-size-sm;
+$font-size-button-sm: $font-size-xs;
+
+$font-size-h1: $font-size-xl;
+$font-size-h2: $font-size-lg;
+
+$color-dark: #1e1e1e;
+$color-dark-grey: #4a5861;
+$color-grey-error: #614e47;
+$color-text: #6b7378;
+$color-grey: #999999;
+$color-light: #fff;
+$color-border: #ced4da;
+$color-border-input: #d3d3d3;
+$btn-cancel: #d3d3d3;
+$color-grey-light: #f1f4f6;
+$color-background: #e6e6e6;
+$color-blue: #0041ff;
+$color-green-blue: #32ceb0;
+$color-primary: #bfd743;
+$color-secondary: #74a822;
+$color-error: #f44336;
+$color-error-pink: #E07777;
+$color-green-blue: #32ceb0;
+$color-pink: #ee4d90;
+$color-package-net: #ee4d8e;
+$color-package-voice: #1db195;
+
+$bg-card-border-active: #f7fef2;
+$color-green-blue-lighter: #3dcdb0;
+$color-main: #8cc53f;
+$color-card-border-active: #7dc63c; // #99cd0d
+$color-card-border-bg: #f7fef2;
+$color-checkbox-active: $color-main;
+$color-salmon: #ff807d;
+$color-pink: #EE4D90;
+$color-gainsboro: #dadada;
+$color-snow: #fbfbfb;
+$color-effective: #f39e5b;
+$color-lavender-blush: #f7fef2;
+
+$color-primary-disabled: #d4e3bf;
+$bg-primary-disabled: #eff9d1;
+$bg-icon-package: #eef5f4;
+
+$color-brown-grey: #808080 !default;
+
+$color-button-text: #3c454d;
+$color-button-cancel: $color-dark-grey;
+$color-btn-primary: $color-primary;
+$color-btn-primary-disabled: #eff9d1;
+$color-btn-cancel: $btn-cancel;
+$color-btn-cancel-disabled: $btn-cancel;
+$border: 1px solid $color-border;

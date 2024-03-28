@@ -1,0 +1,65 @@
+@import 'mixins';
+@import 'variables';
+
+
+.swal2-shown {
+  padding-right: 0 !important;
+}
+.swal2-container {
+  .swal2-header {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.23;
+  }
+
+  .swal2-icon.swal2-warning {
+    border-color: #ED5F2E;
+    color: #ED5F2E;
+  }
+  .swal2-content {
+    font-size: 32px !important;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+  .swal2-modal {
+    @include transitions(5000ms);
+    padding: 1.5rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    max-width: 700px;
+    min-height: 260px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  .btn {
+    background-color: $color-primary;
+    font-size: 34px;
+    width: 200px !important;
+    color: $color-dark-grey;
+  }
+
+  .btn:hover {
+    background-color: $color-primary;
+    color: $color-dark-grey;
+  }
+
+  .btn:focus {
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: map-get($map: $screen, $key: "lg")) {
+    .swal2-modal {
+      margin-top: 20%;
+      // max-width: 493px;
+    }
+  }
+  
+  @media screen and (max-width: map-get($map: $screen, $key: "md")) {
+    .swal2-modal {
+      // width: 73%;
+      margin-top: 20%;
+    }
+  }
+}

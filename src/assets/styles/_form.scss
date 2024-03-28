@@ -1,0 +1,97 @@
+@import './mixins';
+@import './variables';
+
+.default-input {
+  font-family: $font-family-normal;
+  font-size: 30px;
+  color: $color-text;
+  background: $color-light;
+  border: unset;
+  border: 2px solid $color-border-input;
+  border-radius: 4px;
+  outline: none;
+  min-height: 54px;
+  width: 100%;
+  padding: 10px;
+  font-size: 30px;
+}
+
+// TEXT BOX
+input {
+  &.mc-input {
+    @extend .default-input;
+    height: 54px;
+  }
+}
+
+input:focus {
+  // color: $color-text;
+  // border-color: #3c454d;
+}
+
+input:disabled {
+  opacity: 0.7;
+}
+
+// TEXT AREA
+textarea {
+  min-height: 80px;
+  &.mc-input {
+    @extend .default-input;
+  }
+}
+
+// DROPDOWN
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  &.mc-input {
+    @extend .default-input;
+    padding: 5px 10px;
+    background-image: url(/assets/icons/chevron-down-dark.svg);
+    background-position: right;
+    background-position: 99%;
+    background-repeat: no-repeat;
+    object-position: right center;
+  }
+}
+
+.border-error {
+  border: 2px solid $color-error !important;
+}
+
+.mat-error {
+  width: 100%;
+  font-size: 26px;
+  text-align: left !important;
+  vertical-align: left !important;
+  color: $color-error;
+}
+
+.required:after {
+  content: ' *';
+  color: $color-error;
+}
+
+.required-active:after {
+  content: ' *';
+  color: $color-secondary;
+}
+
+@media screen and (max-width: map-get($map: $screen, $key: 'md')) {
+  select {
+    &.mc-input {
+      background-position: 98% 50%;
+    }
+  }
+  .default-input {
+    min-height: 45px;
+    font-size: 28px;
+  }
+  input {
+    &.mc-input {
+      height: 45px;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.grid-right {
+  position: absolute;
+  right: 0px;
+}
+
+.grid-left {
+  position: absolute;
+  left: 0px;
+}
+
+.flex-space-2 {
+  flex: 1.5 0 0 0;
+}
+
+.btn-left {
+  padding-left: 5px;
+  position: absolute;
+}
+
+.btn-right {
+  padding-right: 5px;
+  position: absolute;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center !important;
+  float: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.plr-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.mlr-0 {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.min-hight {
+  min-height: 55vh;
+}
+
+.mtb,
+.ptb {
+  &-1 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  &-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  &-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  &-4 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  &-5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.mb,
+.pb {
+  &-0 {
+    margin-bottom: 0rem;
+  }
+  &-1 {
+    margin-bottom: 1rem;
+  }
+  &-2 {
+    margin-bottom: 2rem;
+  }
+  &-3 {
+    margin-bottom: 3rem;
+  }
+  &-4 {
+    margin-bottom: 4rem;
+  }
+  &-5 {
+    margin-bottom: 5rem;
+  }
+}
+
+.mt,
+.pt {
+  &-0 {
+    margin-top: 0rem;
+  }
+  &-1 {
+    margin-top: 1rem;
+  }
+  &-2 {
+    margin-top: 2rem;
+  }
+  &-3 {
+    margin-top: 3rem;
+  }
+  &-4 {
+    margin-top: 4rem;
+  }
+  &-5 {
+    margin-top: 5rem;
+  }
+}
+
+.plr {
+  &-0 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  &-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  &-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  &-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  &-5 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+@media screen and (min-width: map-get($map: $screen, $key: 'xs')) {
+  .container {
+    max-width: 95% !important;
+  }
+}
+
+@media screen and (min-width: map-get($map: $screen, $key: 'lg')) {
+  .container {
+    max-width: 90% !important;
+  }
+
+}

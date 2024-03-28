@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'mc-header',
+  selector: 'bc-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

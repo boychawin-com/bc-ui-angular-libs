@@ -117,7 +117,7 @@ export class AlertService {
   }
 
 
-  notify(options: AlertOptions): Promise<any> {
+  notify(options: any): Promise<any> {
     return Swal.fire({
       customClass: {
         confirmButton: 'btn btn-success mr-2 ml-2',
@@ -125,7 +125,7 @@ export class AlertService {
       },
       buttonsStyling: false,
       allowOutsideClick: false,
-      // ...options
+      ...options
     });
   }
 }

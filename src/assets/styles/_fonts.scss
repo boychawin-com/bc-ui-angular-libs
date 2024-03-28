@@ -1,0 +1,80 @@
+$font-path-usage: '/assets/fonts/usage/';
+
+// @font-face {
+//   font-family: "DB Heavent Normal";
+//   src: url($font-path+"DBHeavent-Cond.ttf");
+// }
+
+// @font-face {
+//   font-family: "DB Heavent Med";
+//   src: url($font-path-usage+"DB_Heavent_Bd_Cond_v3.2.ttf");
+// }
+
+// @font-face {
+//   font-family: "DB Heavent Bold";
+//   src: url($font-path+"db_heavent_bd_cond_v3.2.ttf");
+// }
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Cond_v3.2.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Cond_v3.2.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Cond_v3.2.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Cond_v3.2.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Med_Cond_v3.2.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Med_Cond_v3.2.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Bd_Cond_v3.2.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  src: url($font-path-usage+'DB_Heavent_Bd_Cond_v3.2.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DB Heavent';
+  // src: url($font-path+"db_heavent_bd_cond_v3.2.ttf");
+  src: url($font-path-usage+'DB_Heavent_Bd_Cond_v3.2.ttf');
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,0 +1,109 @@
+@import 'variables.scss';
+@import 'fonts';
+
+// .color-secondary {
+//   color: $color-secondary;
+// }
+
+// .color-light {
+//   color: $color-light;
+// }
+
+.color-dark {
+  color: $color-dark;
+}
+
+.color-dark-grey {
+  color: $color-dark-grey;
+}
+
+.color-text {
+  color: $color-text;
+}
+
+.color-grey {
+  color: $color-grey;
+}
+
+.color-light {
+  color: $color-light;
+}
+
+.color-border {
+  color: $color-border;
+}
+
+.color-grey-light {
+  color: $color-grey-light;
+}
+
+.color-background {
+  color: $color-background;
+}
+
+.color-blue {
+  color: $color-blue;
+}
+
+.color-green-blue {
+  color: $color-green-blue;
+}
+
+.color-green-blue-lighter {
+  color: $color-green-blue-lighter;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.color-error {
+  color: $color-error;
+}
+
+.color-pink {
+  color: $color-pink;
+}
+
+.color-package-net {
+  color: $color-package-net;
+}
+
+.color-package-voice {
+  color: $color-package-voice;
+}
+
+.color-background {
+  color: $color-background;
+}
+
+.mc-title {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.mc-display-1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.mc-display-2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.mc-display-3 {
+  // font-family: $font-family;
+  font-size: 24px;
+}
+
+.mc-header-1 {
+  // font-family: $font-family;
+  font-size: 30px;
+  line-height: 25px;
+}

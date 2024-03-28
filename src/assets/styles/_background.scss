@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./mixins";
+
+.bg-while {
+  background-color: $color-light;
+}
+
+.bg-while-radius {
+  background-color: $color-light;
+  border-radius: 5px;
+}
+
+.bg-icon-package {
+  @include bg-icon;
+}
