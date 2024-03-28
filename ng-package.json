@@ -5,12 +5,16 @@
     "entryFile": "src/public-api.ts"
   },
   "allowedNonPeerDependencies": [
-    "@auth0/angular-jwt",
+    "bootstrap",
     "font-awesome",
+    "jquery",
     "moment",
+    "owl.carousel",
+    "@auth0/angular-jwt",
     "sweetalert2",
     "scroll-into-view-if-needed",
     "@ngx-translate/core",
-    "ngx-bootstrap"
+    "ngx-bootstrap",
+    "animate.css"
   ]
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-// import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
+// declare var Swal: any;
 
-declare var Swal: any;
 
 export interface AlertOptions {
   title?: string;
@@ -125,7 +125,7 @@ export class AlertService {
       },
       buttonsStyling: false,
       allowOutsideClick: false,
-      ...options
+      // ...options
     });
   }
 }
