@@ -2,6 +2,20 @@
  * Public API
  */
 
-
-// /* helper */
-export * from './libs/helper/alert.service';
+/* core */
+export * from './lib/core/environment';
+/* guard */
+export * from './lib/guards/api-request.guard';
+/* pipe */
+export * from './lib/pipe/date-format.pipe';
+/* helper */
+export * from './lib/helpers/alert.service';
+/* service */
+export * from './lib/service/cookie.service';
+/* directive */
+export * from './lib/directive/loading.directive';
+/* component */
+export * from './lib/component/footer/footer.component';
+export * from './lib/component/header/header.component';
+/* module */
+export * from './lib/bc-shared-libs.module';
