@@ -10,6 +10,8 @@ export * from './lib/guards/api-request.guard';
 export * from './lib/pipe/date-format.pipe';
 /* helper */
 export * from './lib/helpers/alert.service';
+export * from './lib/helpers/page-loading.service';
+export * from './lib/helpers/api-request.service';
 /* service */
 export * from './lib/service/cookie.service';
 /* directive */
