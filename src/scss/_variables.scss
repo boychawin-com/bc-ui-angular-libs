@@ -1,0 +1,70 @@
+@import "colors";
+
+$primary:       $green !default;
+$secondary:     $light-grey !default;
+$success:       $light-green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         lighten($grey, 1%) !default;
+$dark:          lighten($grey, 7) !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":                $primary,
+    "secondary":              $secondary,
+    "success":                $success,
+    "info":                   $info,
+    "warning":                $warning,
+    "danger":                 $danger,
+    "light":                  $light,
+    "dark":                   $dark,
+    "red":                    $red,
+    "pink":                   $pink,
+    "purple":                 $purple,
+    "deep-purple":            $deep-purple,
+    "indigo":                 $indigo,
+    "blue":                   $blue,
+    "light-blue":             $light-blue,
+    "cyan":                   $cyan,
+    "teal":                   $teal,
+    "green":                  $green,
+    "light-green":            $light-green,
+    "lime":                   $lime,
+    "yellow":                 $yellow,
+    "amber":                  $amber,
+    "orange":                 $orange,
+    "deep-orange":            $deep-orange,
+    "brown":                  $brown,
+    "grey":                   $grey,
+    "blue-grey":              $blue-grey,
+    "white":                  $white,
+    "black":                  $black
+  ),
+  $theme-colors
+);
+
+/*
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+*/
+
+// font size
+$font-size-base:              1rem !default;
+// 
+$yiq-text-dark:               #546e7a !default;
+//
+$component-active-bg:         #e0e0e0 !default;
+//
+$input-placeholder-color:     lighten($component-active-bg, 7.5%) !default;
+//
+$border-width:                2px !default;
+$btn-border-width:            2px !default;
+//
+$input-btn-focus-width:       .1rem !default;
+//
+$input-btn-focus-color:       rgba($component-active-bg, .7) !default;
+//
+$breadcrumb-divider: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPCAQAAABzA0a4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBgJMA2co1VZAAAAvklEQVQI1zXPIUhDYQAA4W//m8EypiCMBfsDg8jSkoLBYlgTu+3JDJaBw4UNDQqCaLJaBdFssqxsRfhBGAiCqFUwjG0sjMW7cHC5WNV04xlS5DXsKPnwRpQKrg2su1SGKMkGvmxbs+zFkCQjGtq0YezVJMmgr6Cq4kcvR4Qlt/Z8O5oLtjwo6oYZWXGo6NNZiLCopebPiceAoO7AyLl7AvY1LLhzZUywq6Pgyal/UkHdqq5jv7N6XtvIhff57RTVFjGhqIZ7NwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wOC0yNFQwOTo0ODoxMyswMDowMBNPm5cAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDgtMjRUMDk6NDg6MTMrMDA6MDBiEiMrAAAAAElFTkSuQmCC);

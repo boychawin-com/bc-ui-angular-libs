@@ -1,0 +1,50 @@
+@import "../colors";
+
+input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+}
+
+input[type=checkbox],
+input[type=checkbox]+label {
+    font-size: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type=checkbox]+label {
+    position: relative;
+}
+
+/* Edit the properties below to change the colors of the un-checked checkbox button */
+input[type=checkbox]+label:before {
+    content: '';
+    border: 2px solid $lime;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    line-height: 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+input[type=checkbox]:disabled+label:before {
+    content: '';
+    border: 2px solid #CACACA;
+    background: #F5F5F5;
+}
+
+/* Edit the properties below to change the colors of the checked checkbox button */
+
+input[type=checkbox]:checked+label:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAMAAACsjQ8GAAAAXVBMVEUAAACNxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj+Nxj/U/z1QAAAAHnRSTlMApPXxQes4vZwmB/ktDtrMXEoyFuOxsJCPfXlrMRvxjlGkAAAAoElEQVQoz32R1w7DIAwAmWFlp3v4/z+zVYNrqoLvCfnOEgLRJgieTnnW9xpARmbfwptjs1gUfHBD3c8Jdmyo+htk9CNf6Nefv77bB0bJQkeJ3q7oAagYHPpDIE/FNqEfn+SpCCP6acsrHoCK1QL8PYCkwmg8nyLqsnAJT54sFQUXNI3iSqZa3IXgijTXPBVqEQ0kfQ9T2F4wSNxv4k1l+AJkNxntv2NoEQAAAABJRU5ErkJggg==) no-repeat center center;
+    background-size: 18px;
+}
+
+input[type=checkbox]:focus+label {
+    outline: none;
+}

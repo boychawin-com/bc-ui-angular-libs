@@ -1,0 +1,82 @@
+
+@import "variables";
+@import "colors";
+@import "fonts";
+@import "utilities/ribbon";
+@import "utilities/radio";
+@import "utilities/checkbox";
+@import "utilities/loads";
+
+@import "bootstrap/scss/bootstrap";
+
+// $owl-image-path: "owl.carousel/src/img/";  // old
+$owl-image-path: "../img/"; //new
+@import "owl.carousel/src/scss/owl.carousel";
+@import "owl.carousel/src/scss/owl.theme.default";
+
+$fa-font-path: "font-awesome/fonts";
+// @import "font-awesome/scss/font-awesome"; // old
+@import "font-awesome"; // new
+
+
+body {
+    font-family: 'db_helvethaicaais_x55_regular';
+    background: #eff0f1;
+}
+
+.mc-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .mc-flex-wrap {
+        margin-top: 60px;
+        flex: 1;
+    }
+
+    .mc-flex-fluid {
+        flex: 1;
+    }
+}
+
+.btn {
+    border: $border-width solid white !important;
+}
+
+@media only screen and (max-width: 425px) {
+    [class^=container] {
+        padding-right: 5px;
+        padding-left: 5px;
+
+        .row {
+            margin-right: -5px;
+            margin-left: -5px;
+
+            [class^=col] {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+.version {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 8px;
+    color: #a9a9a9;
+    z-index: 99;
+    background: white;
+    padding: 2px 5px;
+}
+
+[class^=swal2-] {
+    &.btn {
+        width: 110px;
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $grey;
+    opacity: 1; /* Firefox */
+}
